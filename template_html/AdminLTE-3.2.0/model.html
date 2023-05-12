@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Dashboard 2</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__wobble" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-dark">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="model.html" class="nav-link">Home</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      
+      <!-- Messages Dropdown Menu -->
+      
+      <!-- Notifications Dropdown Menu -->
+      
+      <!-- fullscreen button -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+
+      <!-- control menu -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="model.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Aplikasi</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Dedy Surya Wijaya</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="./model.html" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Model</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./analisis.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Analisis</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Analisis Sentimen</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard v2</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Info boxes -->
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box">
+              <span class="info-box-icon bg-info elevation-1"><i class="fas fa-comments"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Jumlah Komentar</span>
+                <span class="info-box-number">
+                  3000
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3">
+              <span class="info-box-icon bg-success elevation-1"><i class="fas fa-caret-up"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Jumlah Inset Positif</span>
+                <span class="info-box-number">130</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+
+          <!-- fix for small devices only -->
+          <div class="clearfix hidden-md-up"></div>
+
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3">
+              <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-caret-down"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Jumlah Inset Negatif</span>
+                <span class="info-box-number">760</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3">
+              <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-edit"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Jumlah Normalisasi</span>
+                <span class="info-box-number">2,000</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+          <!-- Left col -->
+          <div class="col-md-8">
+            <!-- MAP & BOX PANE -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Sebaran Data</h3>
+
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <canvas id="donutChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                </div>
+              </div>
+              <!-- /.card-header -->
+                
+                <!-- /.card-body -->
+        
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+            
+            <!-- /.row -->
+
+            <!-- TABLE: LATEST ORDERS -->
+            
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+
+          <div class="col-md-4">
+            <!-- Info Boxes Style 2 -->
+            
+            <!-- /.info-box -->
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Evaluasi</h3>
+
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="info-box mb-3 bg-info"> 
+                <span class="info-box-icon"><i class="fas fa-chart-pie"></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">Akurasi</span>
+                  <span class="info-box-number">0,662</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body table-responsive p-0">
+                <table class="table table-hover text-nowrap">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Presisi</th>
+                      <th>Recall</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>0/Negatif</td>
+                      <td>0,69</td>
+                      <td>0,87</td>
+                    </tr>
+                    <tr>
+                      <td>1/Positif</td>
+                      <td>0,52</td>
+                      <td>0,27</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+              
+            <!-- /.card -->
+
+            <!-- PRODUCT LIST -->
+            
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">10 Kalimat negatif teratas</h5>
+
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body table-responsive p-0">
+                <table class="table table-hover text-nowrap">
+                  <thead>
+                    <tr>
+                      <th>Index</th>
+                      <th>Polarity</th>
+                      <th>Labell</th>
+                      <th>Komentar</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2751</td>
+                      <td>-0.9906</td>
+                      <td>Negatif</td>
+                      <td>Dibujuk rayu dengan BLT BBM yg hanya smentara tetapi penderitaan dan kesengsaraan rakyat akan dirasakan selamanya.</td>
+                    </tr>
+                    <tr>
+                      <td>1393</td>
+                      <td>-0.9891</td>
+                      <td>Negatif</td>
+                      <td>@fabioSmd01 yg tdk mndukung itu yg malasnya gk ktulungan</td>
+                    </tr>
+                    <tr>
+                      <td>1376</td>
+                      <td>-0.9834</td>
+                      <td>Negatif</td>
+                      <td>Rakyat yang mana? Jangan mengatasnamakan rakyat..kamu aja yang sengsara</td>
+                    </tr>
+                    <tr>
+                      <td>1466</td>
+                      <td>-0.9776</td>
+                      <td>Negatif</td>
+                      <td>@dedi riyan haaalaaahhh loe nya aja yg kurang PICNIC...TURKEY,SRILANGKA DAN 60 NEGARA LAINNYA PADA KOLAB</td>
+                    </tr>
+                    <tr>
+                      <td>1777</td>
+                      <td>-0.9776</td>
+                      <td>Negatif</td>
+                      <td>Klo ga salah yg demo pdip</td>
+                    </tr>
+                    <tr>
+                      <td>2366</td>
+                      <td>-0.9776</td>
+                      <td>Negatif</td>
+                      <td>Butuh pemimpin yg pro rakyat Indonesia butuh perubahan titik</td>
+                    </tr>
+                    <tr>
+                      <td>2481</td>
+                      <td>-0.9776</td>
+                      <td>Negatif</td>
+                      <td>Miskin tp pake hp bisa nonton youtubeApa mental nya yg miskin ingin slalu di subsidi</td>
+                    </tr>
+                    <tr>
+                      <td>2925</td>
+                      <td>-0.9719</td>
+                      <td>Negatif</td>
+                      <td>Ibu Mentri, kau bikin susah masyarakat kecil terutama pensiunan PNS yang gajinya di bawah standar.</td>
+                    </tr>
+                    <tr>
+                      <td>819</td>
+                      <td>-0.9682</td>
+                      <td>Negatif</td>
+                      <td>@MPB_udin loe di sini yg datang"ngegaz ngatain orang ngegaz,,, sakit yaaa,,,,?</td>
+                    </tr>
+                    <tr>
+                      <td>1398</td>
+                      <td>-0.9682</td>
+                      <td>Negatif</td>
+                      <td>Kasian rakyat kecil yg gajiy sedikit</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- ./card-body -->
+              <!-- /.card-footer -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+        <!-- Main row -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">10 Kalimat Positif teratas</h5>
+
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body table-responsive p-0">
+                <table class="table table-hover text-nowrap">
+                  <thead>
+                    <tr>
+                      <th>Index</th>
+                      <th>Polarity</th>
+                      <th>Labell</th>
+                      <th>Komentar</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>94</td>
+                      <td>0.9953</td>
+                      <td>Positif</td>
+                      <td>@Gaya Baru wkwwkw 🤣🤣🤣🤣🤣🤣🤣🤣</td>
+                    </tr>
+                    <tr>
+                      <td>2806</td>
+                      <td>0.9951</td>
+                      <td>Positif</td>
+                      <td>Bu mega menangis melihat ini.....😭😭😭😭😭😭😭😭</td>
+                    </tr>
+                    <tr>
+                      <td>502</td>
+                      <td>0.9750</td>
+                      <td>Positif</td>
+                      <td>@Adul Mega umumin naik pas hari libur..🤣🤣</td>
+                    </tr>
+                    <tr>
+                      <td>1586</td>
+                      <td>0.9715</td>
+                      <td>Positif</td>
+                      <td>Amin.Semoga naikanlah rezeki kami lebih kenaikan harga BBM amin</td>
+                    </tr>
+                    <tr>
+                      <td>399</td>
+                      <td>0.9682</td>
+                      <td>Positif</td>
+                      <td>@Adul Mega Hoaks🤣🤣🤣</td>
+                    </tr>
+                    <tr>
+                      <td>869</td>
+                      <td>0.9682</td>
+                      <td>Positif</td>
+                      <td>@Anjas Setiawan 🤣🤣🤣👍</td>
+                    </tr>
+                    <tr>
+                      <td>1435</td>
+                      <td>0.9682</td>
+                      <td>Positif</td>
+                      <td>@JAVANET 🤣🤣🤣</td>
+                    </tr>
+                    <tr>
+                      <td>2041</td>
+                      <td>0.9682</td>
+                      <td>Positif</td>
+                      <td>@Tonny Fernando pake kipas anginn..🤣🤣🤣</td>
+                    </tr>
+                    <tr>
+                      <td>16</td>
+                      <td>0.9638</td>
+                      <td>Positif</td>
+                      <td>Mantttaaapppp....semoga allah swt  menkhabul kan doa umat nya. Aamiin.</td>
+                    </tr>
+                    <tr>
+                      <td>1049</td>
+                      <td>0.9584</td>
+                      <td>Positif</td>
+                      <td>🤣🤣Uda harga mati....tidak berubah</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- ./card-body -->
+              <!-- /.card-footer -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+
+        <!-- /.row -->
+      </div><!--/. container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.2.0
+    </div>
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+
+<!-- PAGE PLUGINS -->
+<!-- jQuery Mapael -->
+<script src="plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
+<script src="plugins/raphael/raphael.min.js"></script>
+<script src="plugins/jquery-mapael/jquery.mapael.min.js"></script>
+<script src="plugins/jquery-mapael/maps/usa_states.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+
+<!-- AdminLTE for demo purposes -->
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard2.js"></script>
+<script>
+  $(function (){
+    //-------------
+    //- DONUT CHART -
+    //-------------
+    // Get context with jQuery - using jQuery's .get() method.
+    var donutChartCanvas = $('#donutChart').get(0).getContext('2d')
+    var donutData        = {
+      labels: [
+          'Negatif',
+          'Positif',
+      ],
+      datasets: [
+        {
+          data: [2041,959],
+          backgroundColor : ['#00a65a', '#00c0ef'],
+        }
+      ]
+    }
+    var donutOptions     = {
+      maintainAspectRatio : false,
+      responsive : true,
+    }
+    //Create pie or douhnut chart
+    // You can switch between pie and douhnut using the method below.
+    new Chart(donutChartCanvas, {
+      type: 'doughnut',
+      data: donutData,
+      options: donutOptions
+    })
+  })
+</script>
+</body>
+</html>
